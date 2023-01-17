@@ -1,0 +1,134 @@
+.wrapper {
+    width: 640px;
+    margin: 0px auto;
+}
+
+.exchange {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+.exchange .enterCurrency {
+    display: flex;
+    justify-content: flex-end;
+}
+.exchange .enterCurrency .currency {
+    margin: 10px 20px;
+}
+.exchange .enterCurrency .coins {
+    width: 50px;
+    margin: 10px 5px 10px 20px;
+    text-align: end;
+}
+.exchange .enterDate {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.exchange .enterDate .datePicker {
+    margin: 10px 0px 10px 5px;
+}
+.exchange #go {
+    grid-column: 2/3;
+    margin: auto;
+    margin-right: 0;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    outline: none;
+}
+.exchange #result {
+    grid-column: 1/3;
+    margin: 10px 0px auto auto;
+    font-weight: bold;
+    color: #dd4444;
+}
+
+.chartContainer {
+    width: 640px;
+    height: 320px;
+    position: relative;
+}
+.chartContainer .chartNavigation {
+    display: none;
+    position: absolute;
+    top: 1px;
+    width: 130px;
+}
+.chartContainer #backward {
+    left: 5px;
+}
+.chartContainer #forward {
+    right: 5px;
+}
+
+body {
+    background-color: aliceblue;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    font-family: 'Pacifico', cursive;
+    margin: 35px auto 20px;
+}
+
+hr {
+    border-top: 1px solid black;
+    width: 80%;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.main {
+    width: auto;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5px;
+    color: black;
+}
+
+label {
+    font-size: 30px;
+}
+
+.btn {
+    width: 297px;
+}
+
+#finalAmount {
+    font-family: 'Amiri', cursive;
+    display: none;
+    margin: 10px auto;
+
+}
+
+#finalAmount h2 {
+    font-size: 25px;
+}
+
+.finalValue {
+    font-family: 'Amiri', serif;
+}
+
+@media (max-width: 768px) {
+    hr {
+        width: 60%;
+    }
+    .main {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .heading {
+        font-size: 60px;
+    }
+    hr {
+        width: 75%;
+    }
+    #finalAmount h2, .finalValue {
+        font-size: 10px;
+    }
+}
